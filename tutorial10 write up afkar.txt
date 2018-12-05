@@ -1,0 +1,3 @@
+1. Jika ${cors} dihilangkan, maka data tidak akan bisa dikirim ke client yang meminta request terkait dengan datanya karena cors sendiri adalah sebuah mekanisme yang mengizinkan sebuah resource yang terbatas pada suatu halaman web untuk dijadikan request ke domain di luar domain tersebut, pada hal ini adalah heroku. Karena kita ingin memakai di local, maka butuh ${cors} yang berasal dari heroku juga agar datanya bisa dikirim. Jika dihilangkan, maka loading tidak akan berhenti.
+
+2. Jadi fungsi .reduce di kode itu adalah untuk membuat data yang didapatkan dari request yg dibuat jadi lebih rapih keluarannya. Kalau last diganti jadi key, maka akan error karena data tersebut bukanlah data yang seharusnya dioper.
